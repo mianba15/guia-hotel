@@ -1,0 +1,21 @@
+.jumbotron {
+    background-color: darkblue;
+    border-radius: 0;
+    color: white;
+    padding-left: 50px;
+}
+ 
+footer {
+    background-color: lightblue;
+    padding: 50px;
+    margin: 20px auto 0 auto;
+}
+
+.card-hotel {
+    flex: 1 150px;
+    padding: 2px 5px;
+}
+
+.btn-reserva {
+    width: 100%;
+}
