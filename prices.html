@@ -26,9 +26,9 @@
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item"><a href="./index.html" class="nav-link">Inicio</a></li>
 				<li class="nav-item"><a href="./about.html" class="nav-link">Nosotros</a></li>
-				<li class="nav-item"><a href="./prices.html" class="nav-link">Precios</a></li>
+				<li class="nav-item active"><a href="#" class="nav-link">Precios</a></li>
 				<li class="nav-item"><a href="#" class="nav-link">Términosy condiciones</a></li>
-				<li class="nav-item active"><a href="#" class="nav-link">Contacto</a></li>
+				<li class="nav-item"><a href="./contact.html" class="nav-link">Contacto</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -39,59 +39,75 @@
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-				<li class="breadcrumb-item active" aria-current="page">Contacto</li>
+				<li class="breadcrumb-item active" aria-current="page">Precios</li>
 			</ol>
 		</nav>
-		
 		<div class="row">
 			<div class="col-sm-12">
-				<h1>Dejame un comentario</h1>
-			</div>
-
-			<div class="col-sm-12">
-				<form action="#">
-					<div class="form-row">
-						<div class="form-group col-sm-6">
-							<label for="nombre">Nombre</label>
-							<input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
-						</div>
-						<div class="form-group col-sm-6">
-							<label for="apellido">Apellido</label>
-							<input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
-						</div>
-						<div class="form-group col-sm-12">
-							<label for="email">Email</label>
-							<input type="text" class="form-control" id="email" placeholder="Ingrese su email">
-						</div>
-						<div class="form-group col-sm-9">
-							<label for="direccion">Dirección</label>
-							<input type="text" class="form-control" id="direccion" placeholder="Ingrese su dirección">
-						</div>
-						<div class="form-group col-sm-3">
-							<label for="ciudad">Ciudad</label>
-							<select name="ciudad" id="diudad" class="form-control">
-								<option value="">Seleccione una ciudad</option>
-								<option value="Barranquilla">Barranquilla</option>
-								<option value="Bogotá">Bogotá</option>
-								<option value="Cali">Cali</option>
-								<option value="Cartagena">Cartagena</option>
-								<option value="Medellin">Medellín</option>
-								<option value="Villavicencio">Villavicencio</option>
-							</select>
-						</div>
-						<div class="form-group col-sm-12">
-							<label for="mensaje">Mensaje</label>
-							<textarea name="mensaje" class="form-control" id="mensaje" cols="20" rows="10"></textarea>
-						</div>
-						<div class="form-group col-sm-12">
-							<div class="form-check">
-								<input type="checkbox" class="form-check-input" id="contactarme">
-								<label for="contactarme" class="form-check-label">Quiero que me contacten</label>
-							</div>
-						</div>
-					</div>
-					<button type="submit" class="btn btn-primary">Enviar</button>
-				</form>
+				<div class="table-responsive">
+					<table class="table table-striped">
+						<thead class="thead-dark">
+							<th>Calidad</th>
+							<th>Baranquilla</th>
+							<th>Bogotá</th>
+							<th>Cali</th>
+							<th>Cartagena</th>
+							<th>Medellín</th>
+							<th>Villavicencio</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1 <i class="fas fa-star"></i></td>
+								<td>$100</td>
+								<td>$120</td>
+								<td>$140</td>
+								<td>$160</td>
+								<td>$180</td>
+								<td>$195</td>
+							</tr>
+							<tr>
+								<td>2 <i class="fas fa-star"></i> <i class="fas fa-star"></i></td>
+								<td>$200</td>
+								<td>$220</td>
+								<td>$240</td>
+								<td>$260</td>
+								<td>$280</td>
+								<td>$295</td>
+							</tr>
+							<tr>
+								<td>3 <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+										class="fas fa-star"></i></td>
+								<td>$300</td>
+								<td>$320</td>
+								<td>$340</td>
+								<td>$360</td>
+								<td>$380</td>
+								<td>$395</td>
+							</tr>
+							<tr>
+								<td>4 <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+										class="fas fa-star"></i> <i class="fas fa-star"></i></td>
+								<td>$400</td>
+								<td>$420</td>
+								<td>$440</td>
+								<td>$460</td>
+								<td>$480</td>
+								<td>$495</td>
+							</tr>
+							<tr>
+								<td>5 <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+										class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+								</td>
+								<td>$500</td>
+								<td>$520</td>
+								<td>$540</td>
+								<td>$560</td>
+								<td>$580</td>
+								<td>$595</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>
