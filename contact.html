@@ -25,10 +25,10 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item"><a href="./index.html" class="nav-link">Inicio</a></li>
-				<li class="nav-item active"><a href="#" class="nav-link">Nosotros</a></li>
+				<li class="nav-item"><a href="./about.html" class="nav-link">Nosotros</a></li>
 				<li class="nav-item"><a href="#" class="nav-link">Precios</a></li>
 				<li class="nav-item"><a href="#" class="nav-link">Términosy condiciones</a></li>
-				<li class="nav-item"><a href="./contact.html" class="nav-link">Contacto</a></li>
+				<li class="nav-item active"><a href="#" class="nav-link">Contacto</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -39,19 +39,60 @@
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-				<li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+				<li class="breadcrumb-item active" aria-current="page">Contacto</li>
 			</ol>
 		</nav>
+		
 		<div class="row">
-			<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptates error, obcaecati minima
-				quia vero blanditiis, asperiores, eveniet at inventore fuga quod aliquid ad odio distinctio ipsum! Harum,
-				eos pariatur!</span>
+			<div class="col-sm-12">
+				<h1>Dejame un comentario</h1>
+			</div>
 
-			<span>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quia consectetur nemo unde facere totam
-				iste amet veniam inventore possimus fugit, quos error at exercitationem, quis officia culpa provident
-				voluptas.
-			</span>
+			<div class="col-sm-12">
+				<form action="#">
+					<div class="form-row">
+						<div class="form-group col-sm-6">
+							<label for="nombre">Nombre</label>
+							<input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+						</div>
+						<div class="form-group col-sm-6">
+							<label for="apellido">Apellido</label>
+							<input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+						</div>
+						<div class="form-group col-sm-12">
+							<label for="email">Email</label>
+							<input type="text" class="form-control" id="email" placeholder="Ingrese su email">
+						</div>
+						<div class="form-group col-sm-9">
+							<label for="direccion">Dirección</label>
+							<input type="text" class="form-control" id="direccion" placeholder="Ingrese su dirección">
+						</div>
+						<div class="form-group col-sm-3">
+							<label for="ciudad">Ciudad</label>
+							<select name="ciudad" id="diudad" class="form-control">
+								<option value="">Seleccione una ciudad</option>
+								<option value="Barranquilla">Barranquilla</option>
+								<option value="Bogotá">Bogotá</option>
+								<option value="Cali">Cali</option>
+								<option value="Cartagena">Cartagena</option>
+								<option value="Medellin">Medellín</option>
+								<option value="Villavicencio">Villavicencio</option>
+							</select>
+						</div>
+						<div class="form-group col-sm-12">
+							<label for="mensaje">Mensaje</label>
+							<textarea name="mensaje" class="form-control" id="mensaje" cols="20" rows="10"></textarea>
+						</div>
+						<div class="form-group col-sm-12">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="contactarme">
+								<label for="contactarme" class="form-check-label">Quiero que me contacten</label>
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary">Enviar</button>
+				</form>
+			</div>
 		</div>
 	</div>
 
