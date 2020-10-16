@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/main.css">	
+	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
 
@@ -41,16 +41,28 @@
 				<li class="breadcrumb-item active" aria-current="page">Home</li>
 			</ol>
 		</nav>
+
 		<div class="row">
-			<div class="col-sm-4">
+			<div class="col-sm-4"><button class="btn btn-primary" type="button" data-toggle="collapse"
+					data-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">¿Cómo
+					funciona?</button></div>
+			<div class="col-sm-4"><button class="btn btn-primary" type="button" data-toggle="collapse"
+					data-target="#reservo" aria-expanded="false" aria-controls="multiCollapse2">¿Cómo reservo?</button>
+			</div>
+			<div class="col-sm-4"><button class="btn btn-primary" type="button" data-toggle="collapse"
+					data-target="#pago" aria-expanded="false" aria-controls="multiCollapse3">¿Cómo pago?</button></div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4 collapse multi-collapse" id="funciona">
 				<h2>¿Como funciona?</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit.</p>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 collapse multi-collapse" id="reservo">
 				<h2>Dónde reservo?</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit.</p>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 collapse multi-collapse" id="pago">
 				<h2>¿Como pago?</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit.</p>
 			</div>
@@ -58,11 +70,11 @@
 
 		<hr>
 
-		<img class="img-fluid" src="https://placeimg.com/1280/320/any" alt="Responsive"/>
+		<img class="img-fluid" src="https://placeimg.com/1280/320/any" alt="Responsive" />
 
 		<div class="d-flex flex-wrap flex-row">
 			<div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-				<img class="card-img-top" src="https://placeimg.com/380/230/nature" alt="hotel"/>
+				<img class="card-img-top" src="https://placeimg.com/380/230/nature" alt="hotel" />
 				<div class="card-body">
 					<h3 class="card-title">Hotel en Barcelona</h3>
 					<h5 class="card-subtitle text-muted">España</h5>
@@ -73,19 +85,20 @@
 				</div>
 			</div>
 			<div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-				<img class="card-img-top" src="https://placeimg.com/380/230/any" alt="hotel"/>
-				<div class="card-body"> 
+				<img class="card-img-top" src="https://placeimg.com/380/230/any" alt="hotel" />
+				<div class="card-body">
 					<h3 class="card-title">Hotel en Madrid</h3>
 					<h5 class="card-subtitle text-muted">España</h5>
-					<p class="card-text">lorem ipsum dolore sit elit dolore sit sit elit dolore sit sit elit dolore sit dolore sit .</p>
+					<p class="card-text">lorem ipsum dolore sit elit dolore sit sit elit dolore sit sit elit dolore sit
+						dolore sit .</p>
 				</div>
 				<div>
 					<button class="btn btn-primary btn-reserva">Reservar</button>
 				</div>
 			</div>
 			<div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-				<img class="card-img-top" src="https://placeimg.com/380/230/animals" alt="hotel"/>
-				<div class="card-body"> 
+				<img class="card-img-top" src="https://placeimg.com/380/230/animals" alt="hotel" />
+				<div class="card-body">
 					<h3 class="card-title">Hotel en París</h3>
 					<h5 class="card-subtitle text-muted">Francia</h5>
 					<p class="card-text">lorem ipsum dolore sit elit.</p>
@@ -95,8 +108,8 @@
 				</div>
 			</div>
 			<div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-				<img class="card-img-top" src="https://placeimg.com/380/230/architecture" alt="hotel"/>
-				<div class="card-body"> 
+				<img class="card-img-top" src="https://placeimg.com/380/230/architecture" alt="hotel" />
+				<div class="card-body">
 					<h3 class="card-title">Hotel en Munich</h3>
 					<h5 class="card-subtitle text-muted">Alemania</h5>
 					<p class="card-text">lorem ipsum dolore sit elit.</p>
@@ -106,8 +119,8 @@
 				</div>
 			</div>
 			<div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-				<img class="card-img-top" src="https://placeimg.com/380/230/people" alt="hotel"/>
-				<div class="card-body"> 
+				<img class="card-img-top" src="https://placeimg.com/380/230/people" alt="hotel" />
+				<div class="card-body">
 					<h3 class="card-title">Hotel en Bogotá</h3>
 					<h5 class="card-subtitle text-muted">Colombia</h5>
 					<p class="card-text">lorem ipsum dolore sit elit sit elit lorem sit elit..</p>
@@ -117,8 +130,8 @@
 				</div>
 			</div>
 			<div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-				<img class="card-img-top" src="https://placeimg.com/380/230/tech" alt="hotel"/>
-				<div class="card-body"> 
+				<img class="card-img-top" src="https://placeimg.com/380/230/tech" alt="hotel" />
+				<div class="card-body">
 					<h3 class="card-title">Hotel en Medellín</h3>
 					<h5 class="card-subtitle text-muted">Colombia</h5>
 					<p class="card-text">lorem ipsum dolore sit elit.</p>
@@ -128,8 +141,8 @@
 				</div>
 			</div>
 			<div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-				<img class="card-img-top" src="https://placeimg.com/380/230/grayscale" alt="hotel"/>
-				<div class="card-body"> 
+				<img class="card-img-top" src="https://placeimg.com/380/230/grayscale" alt="hotel" />
+				<div class="card-body">
 					<h3 class="card-title">Hotel en Cali</h3>
 					<h5 class="card-subtitle text-muted">Colombia</h5>
 					<p class="card-text">lorem ipsum dolore sit elit.</p>
@@ -139,8 +152,8 @@
 				</div>
 			</div>
 			<div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-				<img class="card-img-top" src="https://placeimg.com/380/230/sepia" alt="hotel"/>
-				<div class="card-body"> 
+				<img class="card-img-top" src="https://placeimg.com/380/230/sepia" alt="hotel" />
+				<div class="card-body">
 					<h3 class="card-title">Hotel en Cartagena</h3>
 					<h5 class="card-subtitle text-muted">Colombia</h5>
 					<p class="card-text">lorem ipsum dolore sit elit.</p>
