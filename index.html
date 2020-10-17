@@ -76,9 +76,12 @@
 			<div class="card card-hotel d-flex flex-column justify-content-between ml-2">
 				<img class="card-img-top" src="https://placeimg.com/380/230/nature" alt="hotel" />
 				<div class="card-body">
-					<h3 class="card-title">Hotel en Barcelona</h3>
+					<h3 class="card-title" data-toggle="tooltip" data-placement="top" title="Tendran la posibilidad de conocer a Messi">Hotel en Barcelona</h3>
 					<h5 class="card-subtitle text-muted">España</h5>
 					<p class="card-text">lorem ipsum dolore sit elit lorem ipsum dolore sit elit.</p>
+					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleContacto">
+						Contacto
+					</button>
 				</div>
 				<div>
 					<button class="btn btn-primary btn-reserva">Reservar</button>
@@ -87,10 +90,13 @@
 			<div class="card card-hotel d-flex flex-column justify-content-between ml-2">
 				<img class="card-img-top" src="https://placeimg.com/380/230/any" alt="hotel" />
 				<div class="card-body">
-					<h3 class="card-title">Hotel en Madrid</h3>
+					<h3 class="card-title" data-toggle="tooltip" data-placement="top" title="Los primeros reservados llevan mangos.">Hotel en Madrid</h3>
 					<h5 class="card-subtitle text-muted">España</h5>
 					<p class="card-text">lorem ipsum dolore sit elit dolore sit sit elit dolore sit sit elit dolore sit
 						dolore sit .</p>
+					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleContacto">
+						Contacto
+					</button>
 				</div>
 				<div>
 					<button class="btn btn-primary btn-reserva">Reservar</button>
@@ -102,6 +108,9 @@
 					<h3 class="card-title">Hotel en París</h3>
 					<h5 class="card-subtitle text-muted">Francia</h5>
 					<p class="card-text">lorem ipsum dolore sit elit.</p>
+					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleContacto">
+						Contacto
+					</button>
 				</div>
 				<div>
 					<button class="btn btn-primary btn-reserva">Reservar</button>
@@ -113,6 +122,9 @@
 					<h3 class="card-title">Hotel en Munich</h3>
 					<h5 class="card-subtitle text-muted">Alemania</h5>
 					<p class="card-text">lorem ipsum dolore sit elit.</p>
+					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleContacto">
+						Contacto
+					</button>
 				</div>
 				<div>
 					<button class="btn btn-primary btn-reserva">Reservar</button>
@@ -124,6 +136,9 @@
 					<h3 class="card-title">Hotel en Bogotá</h3>
 					<h5 class="card-subtitle text-muted">Colombia</h5>
 					<p class="card-text">lorem ipsum dolore sit elit sit elit lorem sit elit..</p>
+					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleContacto">
+						Contacto
+					</button>
 				</div>
 				<div>
 					<button class="btn btn-primary btn-reserva">Reservar</button>
@@ -135,6 +150,9 @@
 					<h3 class="card-title">Hotel en Medellín</h3>
 					<h5 class="card-subtitle text-muted">Colombia</h5>
 					<p class="card-text">lorem ipsum dolore sit elit.</p>
+					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleContacto">
+						Contacto
+					</button>
 				</div>
 				<div>
 					<button class="btn btn-primary btn-reserva">Reservar</button>
@@ -146,9 +164,12 @@
 					<h3 class="card-title">Hotel en Cali</h3>
 					<h5 class="card-subtitle text-muted">Colombia</h5>
 					<p class="card-text">lorem ipsum dolore sit elit.</p>
+					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleContacto">
+						Contacto
+					</button>
 				</div>
 				<div>
-					<button class="btn btn-primary btn-reserva">Reservar</button>
+					<button class="btn btn-primary btn-reserva" data-toggle="popover" data-trigger="hover" data-placement="top" title="Advertencia" data-content="Al reservar aceptas pagar el 50%">Reservar</button>
 				</div>
 			</div>
 			<div class="card card-hotel d-flex flex-column justify-content-between ml-2">
@@ -157,9 +178,42 @@
 					<h3 class="card-title">Hotel en Cartagena</h3>
 					<h5 class="card-subtitle text-muted">Colombia</h5>
 					<p class="card-text">lorem ipsum dolore sit elit.</p>
+					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleContacto">
+						Contacto
+					</button>
 				</div>
 				<div>
 					<button class="btn btn-primary btn-reserva">Reservar</button>
+				</div>
+			</div>
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleContacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModelLabel">Contacto con el hotel</h5>
+							<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="form-group">
+									<label for="recipient-name" class="col-form-label">Tu email:</label>
+									<input type="text" class="form-control" id="recipient-name">
+								</div>
+								<div class="form-group">
+									<label for="message-text" class="col-form-label">Mensaje:</label>
+									<textarea id="message-text" class="form-control"></textarea>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-sucess">Enviar</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -193,8 +247,17 @@
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="node_modules/popper.js/dist/popper.min.js"></script>
+	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<script>
+		$(function(){
+			$("[data-toggle='tooltip']").tooltip();
+			$("[data-toggle='popover']").popover();
+			$("[data-toggle='popover']").popover({ trigger: "hover" });
+		})
+	</script>
+
 </body>
 
 </html>
