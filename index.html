@@ -228,7 +228,7 @@
 					<h5 class="card-subtitle text-muted">Colombia</h5>
 					<p class="card-text">lorem ipsum dolore sit elit.</p>
 					<button type="button" class="btn btn-outline-success" data-toggle="modal"
-						data-target="#exampleContacto">
+						data-target="#exampleContacto" id="contactoBtn">
 						Contacto
 					</button>
 				</div>
@@ -237,7 +237,6 @@
 				</div>
 			</div>
 
-			<!-- Modal -->
 			<div class="modal fade" id="exampleContacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
 				aria-hidden="true">
 				<div class="modal-dialog" role="document">
@@ -305,8 +304,25 @@
 			$("[data-toggle='tooltip']").tooltip();
 			$("[data-toggle='popover']").popover();
 			$("[data-toggle='popover']").popover({ trigger: "hover" });
-			$('.carousel').carousel({
+			$(".carousel").carousel({
 				interval: 2000
+			});
+			$("#exampleContacto").on('show.bs.modal', function (e) {
+				console.log('El modal se está mostrando');
+
+				$('#contactoBtn').removeClass('btn-outline-sucess');
+				$('#contactoBtn').addClass('btn-primary');
+				$('#contactoBtn').prop('disabled', true);
+
+			});
+			$("#exampleContacto").on('shown.bs.modal', function (e) {
+				console.log('El modal se mostró');
+			});
+			$("#exampleContacto").on('hide.bs.modal', function (e) {
+				console.log('El modal se oculta');
+			});
+			$("#exampleContacto").on('hidden.bs.modal', function (e) {
+				console.log('El modal se ocultó');
 			})
 		})
 	</script>
