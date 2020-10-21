@@ -1,5 +1,7 @@
 $yellow: #fffa19;
 $black: #000000;
+$blue: darkblue;
+$white: #ffffff;
 
 @mixin margins($top, $right, $bottom, $left) {
     margin-top: $top;
@@ -16,25 +18,26 @@ $black: #000000;
 }
 
 .jumbotron {
-    background-color: $yellow !important;
+    background-color: $blue !important;
     border-radius: 0 !important;
     color: $black;
-    padding-left: 50px;
-    margin-top: 56px;
+    @include paddings(0, 0, 0, 50px);
+    @include margins(56px, 0, 0, 0);
 }
  
 footer {
     background-color: $yellow;
+    color: $black;
     @include paddings(50px, 50px, 50px, 50px);
-    margin: 20px auto 0 auto;
+    @include margins(20px, auto, 0, auto);
 }
 
 .card {
-    margin: 5px 0;
+    @include margins(5px, 0 , 5px, 0);
 }
 .card-hotel {
     flex: 1 200px;
-    padding: 0px;
+    @include paddings(0, 0, 0, 0);
 }
 
 .btn-reserva {
@@ -43,5 +46,5 @@ footer {
 }
 
 .tab-content {
-    padding-top: 10px;
+    @include paddings(10px, 0, 0, 0);
 }
