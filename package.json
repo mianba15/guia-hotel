@@ -31,6 +31,8 @@
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-sass": "^2.0.0",
     "grunt-contrib-watch": "^1.1.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "htmlmin": "0.0.7",
     "imagemin-cli": "^6.0.0",
     "lite-server": "^2.5.4",
